@@ -1,0 +1,21 @@
+.TextInput_FullWidth {
+	border: 0.1% solid steelblue;
+	font-size: 32px;
+	height: 80px;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: right;
+	width: 89%;
+}
+
+@media only screen and (min-width: 768px) {
+	.TextInput_FullWidth {
+		font-size: 48px;
+		height: 120px;
+		padding-bottom: 0px;
+		padding-left: 1%;
+		padding-right: 1%;
+		padding-top: 0px;
+		width: 97.8%;
+	}	
+}

@@ -1,0 +1,10 @@
+.GridButton {
+	background-color: white;
+	border: .05% solid green;
+	color: orange;
+	margin: 0px;
+	padding-bottom: 15px;
+	padding-left: .025%;
+	padding-right: .025%;
+	padding-top: 15px;
+}

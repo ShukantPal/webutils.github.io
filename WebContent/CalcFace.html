@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-16">
+		<title>WebUtils - Calculator</title>
+		<link type="text/css" rel="stylesheet" href="Interactive/ExpansionHover.css"/>
+		<link type="text/css" rel="stylesheet" href="UI/DisplayFont.css"/>
+		<link type="text/css" rel="stylesheet" href="UI/Input/Button.css"/>
+		<link type="text/css" rel="stylesheet" href="UI/Input/Form.css"/>
+		<link type="text/css" rel="stylesheet" href="UI/Input/TextInput.css"/>
+		<link type="text/css" rel="stylesheet" href="UI/HdrFace.css"/>
+	</head>
+	<body bgcolor="green">
+		<header>
+			<button style="background-color:transparent; height:auto;
+						width:auto; padding: 0px;">
+				☰
+			</button>
+			<span> FallowStudios </span>
+			<a>Home</a>
+			<a>UtilX</a>
+			<a>About Us</a>
+		</header>
+		<div style="background-color: orange; padding: 1%;">
+			<form class="Form_FullWidth" style="margin-bottom:15px;">
+				<input id="Calc_TextInput_Main" class="TextInput_FullWidth"
+						 type="text" value="0"/>
+			</form>
+			<div style="margin-bottom: 5px;">
+				<button class="GridButton" style="width:32%;">
+					C
+				</button>
+				<button class="GridButton" style="width:32.5%;">CE</button>
+				<button class="GridButton" style="width:32.5%;">Ds</button>
+			</div>
+			<div style="margin-bottom: 5px;">
+				<button class="GridButton" style="width:23.75%;"
+						onClick="appendButtonSignal(7)">
+					7
+				</button>
+				<button class="GridButton" style="width:23.75%;"
+						onClick="appendButtonSignal(8)">
+					8
+				</button>
+				<button class="GridButton" style="width:23.75%;"
+						onClick="appendButtonSignal(9)">
+					9
+				</button>
+				<button class="GridButton" style="width:23.75%;"
+						onClick="appendButtonSignal(\'÷\')">
+					÷
+				</button>
+			</div>
+		</div>
+		<script>
+			function appendButtonSignal(chDigit){
+				document.getElementById("Calc_TextInput_Main").value +=
+						chDigit;
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,111 @@
+header {
+	background-color: orange;
+	border: 0px;
+	box-shadow: 0px 4px 4px 0px black;
+	color: red;
+	left: 0px;
+	padding: 0px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+header > * {
+	height: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 18px;
+}
+
+header > span {
+	display: none;
+	margin-left: 1%;
+	margin-right: 2%;
+	padding: 12px;
+}
+
+@keyframes Hdr_Anchor_Startup {
+	0% {
+		background-color: red;
+		color: white;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	30% {
+		background-color: red;
+		border-bottom: 3px solid red;
+		color: white;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+	100% {
+		background-color: white;
+		color: red;
+		padding: 15px;
+	}
+}
+
+@keyframes Hdr_Anchor_OnHover {
+	from {
+		background-color: white;
+		color: red;
+		padding: 15px;
+	}
+	to {
+		background-color: red;
+		color: white;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+}
+
+header > a {
+	background-color: transparent;
+	border-bottom: 3px solid white;
+	display: inline-block;
+	font-size: 13px;
+	padding: 10px;
+	vertical-align: middle;
+}
+
+header > a:hover {
+	background-color: red;
+	border-bottom: 3px solid pink;
+	box-shadow: 0px 3px 3px 0px pink;
+	color: white;
+}
+
+header > button {
+	background-color: transparent;
+	border: 0px;
+	color: indigo;
+	margin-left: 10px;
+}
+
+header + div {
+	margin-top: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+	header > span {
+		display: inline-block;
+	}
+	
+	header > a {
+		animation-name: Hdr_Anchor_Startup;
+		animation-duration: 1s;
+		font-size: 14px;
+		padding: 15px;
+	}
+	
+	header > a:hover {
+		animation-name: Hdr_Anchor_OnHover;
+		animation-duration: 1s;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	
+	header + div {
+		margin-top: 100px;
+	}
+}

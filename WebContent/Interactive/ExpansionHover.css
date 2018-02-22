@@ -1,0 +1,7 @@
+.ExpansionHover_Parent > .Display_OnHover {
+	display: none;
+}
+
+.ExpansionHover_Parent:hover > .Display_OnHover {
+	display: block;
+}
